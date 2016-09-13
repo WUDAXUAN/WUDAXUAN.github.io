@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/title.css" />
+		<script type="text/javascript" src="js/title2.js" ></script>
+	</head>
+	<body>
+		<form action="" id="form1">
+			姓名：<input type="text" name="username" value="" />
+			年龄：<input type="text" name="age" value="" />
+			性别：
+			<select name="sex">
+				<option value="男">男</option>
+				<option value="女">女</option>
+			</select>
+			<input type="button" name="dateSub" value="提交" />
+			<br />
+			<br />
+			排序：
+			<select name="ID">
+				<option value="编号">编号</option>
+				<option value="年龄">年龄</option>
+			</select>
+			<select name="order">
+				<option value="升序">升序</option>
+				<option value="降序">降序</option>
+			</select>
+			<input type="button" name="num_sub" value="提交" />
+			<br />
+			<br />
+			搜索：
+			<select name="sou">
+				<option value="编号">编号</option>
+				<option value="姓名">姓名</option>
+				<option value="年龄">年龄</option>
+				<option value="性别">性别</option>
+			</select>
+			<input type="text" id="search" />
+			<input type="button" name="searchSub" value="提交" />
+		</form>
+		<br />
+		<br />
+		<table width="100%" border="1" id="tab">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="checkAll">全选</th>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div id="bg"></div>
+    <div id="tip">
+		<p id="h2">
+			<span id="p"></span>
+		</p>
+		<p id="text"></p>
+		<div id="btnbox">
+			<input type="button" value="确定" id="sure" class="btn"/>
+			<input type="button" value="取消" id="cancel"  class="btn"/>
+		</div>
+	</div>
+	</body>
+</html>
